@@ -16,13 +16,18 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, .name {
+h1,
+h2,
+h3,
+.name {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 600;
     letter-spacing: 0.3px;
 }
 
-p, span, a {
+p,
+span,
+a {
     font-weight: 400;
 }
 
@@ -129,7 +134,10 @@ footer {
 }
 
 .tech-stack {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .tech-stack h3 {
@@ -138,6 +146,7 @@ footer {
 }
 
 .tech-grid {
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
@@ -295,12 +304,121 @@ footer {
     font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVE LAYER */
+
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    section {
+        padding: 70px 18px;
+    }
+
+    .name {
+        font-size: 3.2rem;
+    }
+
     .about-container {
-        flex-direction: column;
+        gap: 30px;
     }
 
     .tech-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablets / small laptops */
+@media (max-width: 900px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tech-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero {
+        padding: 0 20px;
+    }
+
+    .name {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card {
+        padding: 16px;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    section {
+        padding: 60px 16px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+    .name {
+        font-size: 2rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .project-card img {
+        height: 160px;
     }
 }
