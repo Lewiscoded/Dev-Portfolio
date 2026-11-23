@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Project Floppy Fists thumbnail: two wobbly ragdolls brawling">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b0f5c"/>
+      <stop offset="1" stop-color="#140a1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" fill="url(#bg)"/>
+  <!-- speed rays -->
+  <g fill="#9419ec" opacity="0.25">
+    <polygon points="240,140 0,0 60,0"/><polygon points="240,140 160,0 230,0"/><polygon points="240,140 330,0 400,0"/>
+    <polygon points="240,140 480,40 480,110"/><polygon points="240,140 480,220 480,290"/><polygon points="240,140 0,180 0,250"/>
+  </g>
+  <!-- arena floor (checkered kitchen tiles) -->
+  <g>
+    <rect y="236" width="480" height="64" fill="#e8e1d0"/>
+    <g fill="#2a1747">
+      <rect x="0" y="236" width="40" height="32"/><rect x="80" y="236" width="40" height="32"/><rect x="160" y="236" width="40" height="32"/>
+      <rect x="240" y="236" width="40" height="32"/><rect x="320" y="236" width="40" height="32"/><rect x="400" y="236" width="40" height="32"/>
+      <rect x="40" y="268" width="40" height="32"/><rect x="120" y="268" width="40" height="32"/><rect x="200" y="268" width="40" height="32"/>
+      <rect x="280" y="268" width="40" height="32"/><rect x="360" y="268" width="40" height="32"/><rect x="440" y="268" width="40" height="32"/>
+    </g>
+    <rect y="232" width="480" height="6" fill="#e5ca72"/>
+  </g>
+  <!-- left brawler (gold) -->
+  <g transform="translate(150 150) rotate(-12)" stroke="#7a5a12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-10 60 Q-30 80 -26 100" fill="none" stroke="#c9a94c" stroke-width="18"/>
+    <path d="M14 60 Q26 82 40 96" fill="none" stroke="#c9a94c" stroke-width="18"/>
+    <rect x="-30" y="-10" width="60" height="80" rx="30" fill="#e5ca72"/>
+    <path d="M24 10 Q60 -4 92 -6" fill="none" stroke="#e5ca72" stroke-width="18"/>
+    <circle cx="96" cy="-6" r="15" fill="#f3dc8f"/>
+    <path d="M-22 14 Q-52 36 -44 62" fill="none" stroke="#e5ca72" stroke-width="18"/>
+    <circle cx="0" cy="-36" r="30" fill="#e5ca72"/>
+    <circle cx="8" cy="-40" r="4" fill="#2a1747" stroke="none"/><circle cx="22" cy="-38" r="4" fill="#2a1747" stroke="none"/>
+    <path d="M6 -24 q8 6 16 0" fill="none" stroke="#2a1747"/>
+  </g>
+  <!-- right brawler (purple), knocked back -->
+  <g transform="translate(340 150) rotate(22)" stroke="#2e0752" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-12 60 Q-28 84 -46 94" fill="none" stroke="#7d2fc0" stroke-width="18"/>
+    <path d="M12 60 Q20 84 18 104" fill="none" stroke="#7d2fc0" stroke-width="18"/>
+    <rect x="-30" y="-10" width="60" height="80" rx="30" fill="#9b45e0"/>
+    <path d="M26 14 Q56 0 62 -30" fill="none" stroke="#9b45e0" stroke-width="18"/>
+    <circle cx="62" cy="-34" r="14" fill="#b56ef0"/>
+    <path d="M-24 12 Q-50 -6 -60 -30" fill="none" stroke="#9b45e0" stroke-width="18"/>
+    <circle cx="-62" cy="-34" r="14" fill="#b56ef0"/>
+    <circle cx="0" cy="-36" r="30" fill="#9b45e0"/>
+    <path d="M-16 -44 l8 8 m0 -8 l-8 8" stroke="#fff"/><path d="M4 -44 l8 8 m0 -8 l-8 8" stroke="#fff"/>
+    <ellipse cx="-2" cy="-22" rx="6" ry="4" fill="#2e0752" stroke="none"/>
+  </g>
+  <!-- POW burst -->
+  <g transform="translate(262 92)">
+    <polygon points="0,-46 12,-18 42,-30 26,-4 54,10 22,14 28,44 4,24 -16,48 -16,18 -48,24 -26,0 -50,-22 -18,-16 -20,-46" fill="#e5ca72" stroke="#fff6d0" stroke-width="4" stroke-linejoin="round"/>
+    <text x="0" y="10" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="24" fill="#2a1747" transform="rotate(-8)">POW!</text>
+  </g>
+  <!-- rocket launcher pickup -->
+  <g transform="translate(410 214) rotate(-15)">
+    <rect x="-34" y="-8" width="68" height="16" rx="6" fill="#55555d" stroke="#18181b" stroke-width="3"/>
+    <polygon points="34,-10 48,0 34,10" fill="#d9433b" stroke="#18181b" stroke-width="3"/>
+    <rect x="-8" y="6" width="8" height="14" fill="#55555d" stroke="#18181b" stroke-width="3"/>
+  </g>
+  <!-- wobble lines -->
+  <g stroke="#fff" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round">
+    <path d="M396 60 q6 -6 12 0 t12 0"/><path d="M402 76 q6 -6 12 0 t12 0"/>
+    <path d="M70 84 q6 -6 12 0 t12 0"/>
+  </g>
+</svg>
