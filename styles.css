@@ -310,6 +310,102 @@ footer {
     position: relative;
     z-index: 1;
     max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px 80px;
+}
+
+/* games page top bar */
+.arcade-nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: rgba(15, 15, 16, 0.85);
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid #2a2a2f;
+    font-family: "Press Start 2P", "Courier New", monospace;
+    font-size: 0.6rem;
+}
+
+.back-link:hover {
+    text-decoration: none;
+    color: #f3dc8f;
+}
+
+.nav-tag {
+    color: #b14be0;
+}
+
+.arcade-page .games {
+    padding-top: 60px;
+    min-height: calc(100vh - 120px);
+}
+
+/* home page teaser banner linking to games.html */
+.games-teaser {
+    position: relative;
+    z-index: 1;
+}
+
+.arcade-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 36px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #1d1b22 0%, #141416 100%);
+    border: 3px solid #2a2a2f;
+    border-radius: 16px;
+    box-shadow: 0 6px 0 #0a0a0b, 0 14px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.arcade-banner:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+    border-color: #e5ca72;
+    box-shadow: 0 6px 0 #6a0dad, 0 0 28px rgba(148, 25, 236, 0.45);
+}
+
+.arcade-banner .insert-coin,
+.arcade-banner .arcade-title {
+    margin: 0;
+}
+
+.banner-thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.banner-thumbs img {
+    width: 150px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #0a0a0b;
+    transition: transform 0.3s;
+}
+
+.banner-thumbs img:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.banner-thumbs img:nth-child(3) {
+    transform: rotate(5deg);
+}
+
+.arcade-banner:hover .banner-thumbs img {
+    transform: rotate(0) translateY(-4px) scale(1.05);
+}
+
+.arcade-banner .play-btn {
+    flex: none;
+    padding: 14px 22px;
 }
 
 .arcade-header {
@@ -725,6 +821,15 @@ footer {
 
     .game-grid {
         grid-template-columns: 1fr;
+    }
+
+    .banner-thumbs img {
+        width: 30%;
+    }
+
+    .arcade-nav {
+        padding: 14px 16px;
+        font-size: 0.5rem;
     }
 
     .arcade-title {
