@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lewis | Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=3" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
         <p class="subtitle">Full-Stack Engineer | Building Web Apps & Systems</p>
         <div class="hero-controls">
             <a href="#projects" class="btn">View Work</a>
-            <a href="#games" class="btn">Play Games</a>
+            <a href="games.html" class="btn">Play Games</a>
             <a href="./assets/jesse j lewis resume SWE.pdf" class="btn">Resume</a>
         </div>
 
@@ -144,71 +144,17 @@
         </div>
     </section>
 
-    <section id="games" class="games">
-        <div class="arcade-header">
-            <p class="insert-coin">&#9654; INSERT COIN</p>
-            <h2 class="arcade-title">Vibe Coded Games</h2>
-            <p class="arcade-sub">Side quests built for fun &mdash; pick a cartridge and hit play.</p>
-            <div class="hud" aria-hidden="true">
-                <span>1UP <b>JESSE</b></span>
-                <span>HI-SCORE <b id="hiScore">000000</b></span>
-                <span>GAMES <b>03</b></span>
-            </div>
-        </div>
-
-        <div class="game-grid">
-            <article class="game-card" style="--accent:#e5ca72">
-                <a class="game-screen" href="https://lewiscoded.github.io/package-tycoon/" target="_blank" rel="noopener">
-                    <img src="./assets/games/package-tycoon.svg" alt="Package Tycoon thumbnail" />
-                    <span class="press-start">&#9654; PRESS START</span>
-                </a>
-                <div class="game-info">
-                    <div class="game-meta"><span class="level">LVL 01</span><span class="players">1&ndash;2P ONLINE</span></div>
-                    <h3>Package Tycoon</h3>
-                    <p>A cozy 3D tycoon where you sort packages, grow your warehouse empire and race a friend online.</p>
-                    <div class="chips"><span>three.js</span><span>JavaScript</span><span>Multiplayer</span></div>
-                    <div class="game-controls">
-                        <a class="play-btn" href="https://lewiscoded.github.io/package-tycoon/" target="_blank" rel="noopener">&#9654; Play</a>
-                        <a class="src-btn" href="https://github.com/Lewiscoded/package-tycoon" target="_blank" rel="noopener">Source</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="game-card" style="--accent:#b14be0">
-                <a class="game-screen" href="https://lewiscoded.github.io/cosmos-sandbox/" target="_blank" rel="noopener">
-                    <img src="./assets/games/cosmos-sandbox.svg" alt="Cosmos Sandbox thumbnail" />
-                    <span class="press-start">&#9654; PRESS START</span>
-                </a>
-                <div class="game-info">
-                    <div class="game-meta"><span class="level">LVL 02</span><span class="players">1P SANDBOX</span></div>
-                    <h3>Cosmos Sandbox</h3>
-                    <p>Build your own solar system &mdash; spawn planets, stars and black holes and watch them orbit.</p>
-                    <div class="chips"><span>three.js</span><span>JavaScript</span><span>Physics</span></div>
-                    <div class="game-controls">
-                        <a class="play-btn" href="https://lewiscoded.github.io/cosmos-sandbox/" target="_blank" rel="noopener">&#9654; Play</a>
-                        <a class="src-btn" href="https://github.com/Lewiscoded/cosmos-sandbox" target="_blank" rel="noopener">Source</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="game-card" style="--accent:#e5ca72">
-                <a class="game-screen" href="https://lewiscoded.github.io/Project-Floppy-Fists/" target="_blank" rel="noopener">
-                    <img src="./assets/games/floppy-fists.svg" alt="Project Floppy Fists thumbnail" />
-                    <span class="press-start">&#9654; PRESS START</span>
-                    <span class="badge-new">NEW!</span>
-                </a>
-                <div class="game-info">
-                    <div class="game-meta"><span class="level">LVL 03</span><span class="players">UP TO 5P ONLINE</span></div>
-                    <h3>Project Floppy Fists</h3>
-                    <p>A wobbly ragdoll brawler &mdash; grab a weapon, pick a map (Kitchen, Office, Medieval) and fling your friends.</p>
-                    <div class="chips"><span>three.js</span><span>Ragdoll physics</span><span>Multiplayer</span></div>
-                    <div class="game-controls">
-                        <a class="play-btn" href="https://lewiscoded.github.io/Project-Floppy-Fists/" target="_blank" rel="noopener">&#9654; Play</a>
-                        <a class="src-btn" href="https://github.com/Lewiscoded/Project-Floppy-Fists" target="_blank" rel="noopener">Source</a>
-                    </div>
-                </div>
-            </article>
-        </div>
+    <section class="games-teaser">
+        <a class="arcade-banner" href="games.html">
+            <span class="insert-coin">&#9654; INSERT COIN</span>
+            <span class="arcade-title">Vibe Coded Games</span>
+            <span class="banner-thumbs" aria-hidden="true">
+                <img src="./assets/games/package-tycoon.svg" alt="" />
+                <img src="./assets/games/cosmos-sandbox.svg" alt="" />
+                <img src="./assets/games/floppy-fists.svg" alt="" />
+            </span>
+            <span class="play-btn">&#9654; Enter the Arcade</span>
+        </a>
     </section>
 
     <section class="contact">
@@ -232,7 +178,7 @@
         <p>Jesse J Lewis ©2026</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 
 </html>
